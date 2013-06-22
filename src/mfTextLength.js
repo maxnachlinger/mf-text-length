@@ -95,6 +95,24 @@ angular.module('mf.directives').directive('mfTextLength', function () {
 				element.parent().append(indicator);
 			}
 
+			function validateText(value) {
+				var newState = getState(value);
+
+				if (!statesAreDifferent(state, newState))
+					return;
+
+				state = newState;
+				$(indicator).attr({'class': state.style});
+				$(indicator).text(state.text);
+
+				ctrl.$setValidity('mfTextLength', state.lengthValid);
+
+				if (state.text.lengthValid)
+					$(element).removeClass('indicator-visible');
+				else
+					$(element).addClass('indicator-visible');
+			}
+
 			function setup() {
 				state = getState();
 				addIndicator();
@@ -122,24 +140,6 @@ angular.module('mf.directives').directive('mfTextLength', function () {
 				validateText(value);
 				return value;
 			});
-
-			function validateText(value) {
-				var newState = getState(value);
-
-				if (!statesAreDifferent(state, newState))
-					return;
-
-				state = newState;
-				$(indicator).attr({'class': state.style});
-				$(indicator).text(state.text);
-
-				ctrl.$setValidity('mfTextLength', state.lengthValid);
-
-				if (state.text.lengthValid)
-					$(element).removeClass('indicator-visible');
-				else
-					$(element).addClass('indicator-visible');
-			}
 
 		}
 	};
