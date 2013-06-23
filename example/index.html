@@ -10,7 +10,7 @@
 	<script type='text/javascript' src="./simpleController.js"></script>
 
 	<link rel="stylesheet" type="text/css"
-	      href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css">
+	      href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 
 	<script type='text/javascript'>
@@ -18,12 +18,11 @@
 		angular.module('mf.directives', []);
 		angular.module('mf.controllers', []);
 		angular.module('mf', ['mf.directives', 'mf.controllers']);
-		angular.bootstrap(document, ['mf']);
 		//]]>
 	</script>
 </head>
-<body>
-<form ng-app="mf" ng-controller="SomeController" name="testForm" novalidate>
+<body ng-app="mf">
+<form ng-app="mf" ng-controller="SimpleController" name="testForm" novalidate>
 	<label class="form-label" for="inputName0">Name:</label>
 
 	<div class="form-input-container">
