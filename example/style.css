@@ -1,3 +1,7 @@
+body {
+	padding: 20px;
+}
+
 .mf-text-length-off {
 	display: none;
 }
