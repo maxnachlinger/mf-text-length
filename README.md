@@ -13,3 +13,6 @@ Here's a [quick example](https://rawgithub.com/maxnachlinger/mf-text-length/mast
 * mf-text-near-class - style of text-length indicator when the text-length is within the warning range
 * mf-text-at-class - style of text-length indicator when the text-length is at max-text-length
 * mf-text-over-class - style of text-length indicator when the text-length is over max-text-length
+
+#### What's with the mf prefix?
+Stands for [Mindflash](http://www.mindflash.com), the people who put up with me all day.
