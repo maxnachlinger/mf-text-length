@@ -1,12 +1,3 @@
-angular.module('mf.directives', []);
-angular.module('mf.controllers', []);
-angular.module('mf', ['mf.directives', 'mf.controllers']);
-
-angular.module('mf.controllers').controller('SomeController', function ($scope) {
-	//$scope.name = 'Test Name';
-	$scope.name = 'Test Name which is quite long and no doubt violates out text-length';
-});
-
 angular.module('mf.directives').directive('mfTextLength', function () {
 	return {
 		require: 'ngModel',
@@ -144,5 +135,3 @@ angular.module('mf.directives').directive('mfTextLength', function () {
 		}
 	};
 });
-
-angular.bootstrap(document, ['mf']);

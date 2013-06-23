@@ -1,0 +1,26 @@
+.mf-text-length-off {
+	display: none;
+}
+
+.mf-text-length-near, .mf-text-length-over, .mf-text-length-at {
+	display: block;
+	z-index: 2;
+	color: #484848;
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 5px 5px 0 0;
+}
+
+.mf-text-length-over, .mf-text-length-at {
+	color: red !important;
+}
+
+.form-input {
+	width: 330px;
+}
+
+.form-input-container {
+	position: relative;
+	width: 400px;
+}

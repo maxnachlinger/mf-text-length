@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<title>fun</title>
+	<script type='text/javascript' src='http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.1.1/angular.min.js'></script>
+	<script type='text/javascript' src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+	<script type='text/javascript' src="../src/mfTextLength.js"></script>
+	<script type='text/javascript' src="./simpleController.js"></script>
+
+	<link rel="stylesheet" type="text/css"
+	      href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<script type='text/javascript'>
+		//<![CDATA[
+		angular.module('mf.directives', []);
+		angular.module('mf.controllers', []);
+		angular.module('mf', ['mf.directives', 'mf.controllers']);
+		angular.bootstrap(document, ['mf']);
+		//]]>
+	</script>
+</head>
+<body>
+<form ng-app="mf" ng-controller="SomeController" name="testForm" novalidate>
+	<label class="form-label" for="inputName0">Name:</label>
+
+	<div class="form-input-container">
+		<input type="text" id="inputName0" placeholder="Name" ng-model="name0"
+		       class="form-input" mf-text-length="40" mf-text-warn-at="30" required>
+	</div>
+	<label class="form-label" for="inputName1">Another Name:</label>
+
+	<div class="form-input-container">
+		<input type="text" id="inputName1" placeholder="Name" ng-model="name1"
+		       class="form-input" mf-text-length="40" mf-text-warn-at="30" required>
+	</div>
+	<div>Form valid: {{testForm.$valid}}</div>
+</form>
+</body>
+</html>
