@@ -11,17 +11,17 @@
 <body>
 <form ng-controller="SimpleController" name="testForm" novalidate>
 	<label class="form-label" for="inputName0">Name:</label>
-
 	<div class="form-input-container">
 		<input type="text" id="inputName0" placeholder="Name" ng-model="name0" class="form-input"
 		       mf-text-length="40" mf-text-warn-at="30" required>
 	</div>
-	<label class="form-label" for="inputName1">Another Name:</label>
 
+	<label class="form-label" for="inputName1">Another Name:</label>
 	<div class="form-input-container">
 		<input type="text" id="inputName1" placeholder="Name" ng-model="name1" class="form-input"
 		       mf-text-length="40" mf-text-warn-at="30" required>
 	</div>
+
 	<div>Form valid: {{testForm.$valid}}</div>
 </form>
 

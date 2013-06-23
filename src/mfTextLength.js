@@ -1,4 +1,4 @@
-angular.module('mf.directives').directive('mfTextLength', function () {
+angular.module('mf.directives', []).directive('mfTextLength', function () {
 	return {
 		require: 'ngModel',
 		// ctrl here is the controller for ng-model
