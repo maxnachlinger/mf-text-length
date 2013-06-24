@@ -1,5 +1,7 @@
 ## mf-text-length
 
+[![Build Status](https://travis-ci.org/maxnachlinger/mf-text-length.png?branch=master)](https://travis-ci.org/maxnachlinger/mf-text-length)
+
 [![Example](https://raw.github.com/maxnachlinger/mf-text-length/master/example/example.png)](https://rawgithub.com/maxnachlinger/mf-text-length/master/example/index.html)
 
 Here's a [quick example](https://rawgithub.com/maxnachlinger/mf-text-length/master/example/index.html).
