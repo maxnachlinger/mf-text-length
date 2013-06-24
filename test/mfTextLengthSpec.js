@@ -18,7 +18,7 @@ describe('mf.directives Tests', function () {
 	it('Should handle text with a length greater than mf-text-length', function () {
 		var newtextLength = 30;
 		givenTextOfLength(newtextLength);
-		indicatorHaClassAndText('mf-text-length-over', newtextLength + ' / ' + maxLength);
+		indicatorHasClassAndText('mf-text-length-over', newtextLength + ' / ' + maxLength);
 
 		expect(scope.testForm.$valid).toBeFalsy();
 	});
@@ -26,7 +26,7 @@ describe('mf.directives Tests', function () {
 	it('Should handle text with a length equal to mf-text-length', function () {
 		var newtextLength = maxLength;
 		givenTextOfLength(newtextLength);
-		indicatorHaClassAndText('mf-text-length-at', newtextLength + ' / ' + maxLength);
+		indicatorHasClassAndText('mf-text-length-at', newtextLength + ' / ' + maxLength);
 
 		expect(scope.testForm.$valid).toBeTruthy();
 	});
@@ -34,7 +34,7 @@ describe('mf.directives Tests', function () {
 	it('Should handle text with a length within greater than mf-text-warn-at and less than mf-text-length', function () {
 		var newtextLength = 15;
 		givenTextOfLength(newtextLength);
-		indicatorHaClassAndText('mf-text-length-near', newtextLength + ' / ' + maxLength);
+		indicatorHasClassAndText('mf-text-length-near', newtextLength + ' / ' + maxLength);
 
 		expect(scope.testForm.$valid).toBeTruthy();
 	});
@@ -42,7 +42,7 @@ describe('mf.directives Tests', function () {
 	it('Should handle text with a length less than mf-text-warn-at', function () {
 		var newtextLength = 8;
 		givenTextOfLength(newtextLength);
-		indicatorHaClassAndText('mf-text-length-off', '');
+		indicatorHasClassAndText('mf-text-length-off', '');
 
 		expect(scope.testForm.$valid).toBeTruthy();
 	});
@@ -53,7 +53,7 @@ describe('mf.directives Tests', function () {
 		});
 	}
 
-	function indicatorHaClassAndText(cssClass, text) {
+	function indicatorHasClassAndText(cssClass, text) {
 		var indicator = elm.find('span');
 		expect(indicator.hasClass(cssClass));
 		expect(indicator.text()).toBe(text);
