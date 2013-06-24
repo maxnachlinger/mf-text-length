@@ -1,0 +1,26 @@
+{
+	"name": "mf-text-length",
+	"version": "0.0.1",
+	"description": "A text-length form validator and display directive for AngularJS",
+	"main": "karma.conf.js",
+	"directories": {
+		"example": "example",
+		"test": "test"
+	},
+	"scripts": {
+		"test": "./node_modules/.bin/karma start --single-run --browsers PhantomJS"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/maxnachlinger/mf-text-length.git"
+	},
+	"author": "Max Nachlinger",
+	"license": "BSD",
+	"readmeFilename": "README.md",
+	"bugs": {
+		"url": "https://github.com/maxnachlinger/mf-text-length/issues"
+	},
+	"devDependencies": {
+		"karma": "~0.8.6"
+	}
+}
