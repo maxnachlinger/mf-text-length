@@ -17,4 +17,4 @@ Here's a [quick example](https://rawgithub.com/maxnachlinger/mf-text-length/mast
 * mf-text-over-class - style of text-length indicator when the text-length is over max-text-length
 
 #### What's with the mf prefix?
-Stands for [Mindflash](http://www.mindflash.com), the people who put up with me all day.
+Stands for [Mindflash](http://www.mindflash.com), I used to work there, they're great folks and they're likely hiring :)
