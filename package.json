@@ -21,6 +21,6 @@
 		"url": "https://github.com/maxnachlinger/mf-text-length/issues"
 	},
 	"devDependencies": {
-		"karma": "~0.8.6"
+		"karma": "~1.3.0"
 	}
 }
